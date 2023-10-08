@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header{
+    height:1000px;
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Navbar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color:transparent;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+    z-index: 100;
+    cursor: pointer;
+}
+.Navbar .Nav-menu .Nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.Navbar .Nav-menu .Nav-ul li{
+    padding: 0px 20px;
+    list-style: none;
+}
+.Navbar .Nav-menu .Nav-ul li a{
+    text-decoration: none;
+    color:white;
+}
+.Navbar .Nav-menu .Nav-ul li::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: transparent;
+    transition: width 0.5s ease;background-color: 0.5s ease;
+}
+.Navbar .Nav-menu .Nav-ul li:hover::after{
+    width: 100%;
+    background-color: white;
+}
+.Navbar .Nav-search i{
+    padding: 0px 10px;
+    color: white;
+}
+#Dropdown-li{
+    background-color: transparent;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+}
+
+.banner .container .row .banner-head h1{
+    position: absolute;
+    top: 170px;
+    left: 450px;
+    text-transform: uppercase;
+    font-size:140px;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+.banner .container .row .banner-head h1 span{
+    color:#ff022c;
+}
+.banner .container .row .banner-head h3{
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    text-transform: uppercase;
+    font-size: 50px;
+    background-image: linear-gradient(-50deg,white,white);
+    background-repeat: no-repeat;
+    background-position: -1200px 0px;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: banneranimation 7s linear infinite alternate;
+}
+@keyframes banneranimation {
+    100%{
+        background-position: 0px 0px;
+    }
+}
+
+.banner .container .row .banner-p p{
+    height: 200px;
+    padding-top: 10px;
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    width: 80%;
+    color:white;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    text-align: center;
+}
+.banner_btn button{
+    position: absolute;
+    top: 640px;
+    left: 700px;
+}
+
+#navlogo img{
+    width: 50px;
+    border-radius: 50%;
+}
+#navlogo{
+    display: flex;
+    align-items:end;
+}
+#navlogo p{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+.bgcolor.scrolled{
+    background-color:rgba(0,0,0,.800);
+}
